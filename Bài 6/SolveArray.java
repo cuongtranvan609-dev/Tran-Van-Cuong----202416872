@@ -1,4 +1,3 @@
-package Lession6;
 
 import java.util.Scanner;
 import java.util.Arrays;
