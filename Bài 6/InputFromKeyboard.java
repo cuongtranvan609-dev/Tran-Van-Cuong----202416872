@@ -1,4 +1,3 @@
-package LAB01_2403;
 
 import java.util.Scanner;
 public class InputFromKeyboard {
