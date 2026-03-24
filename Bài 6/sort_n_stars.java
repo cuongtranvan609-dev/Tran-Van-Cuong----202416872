@@ -1,7 +1,4 @@
 
-
-package Lession4 ;
-
 import java.util.Scanner;
 
 public class sort_n_stars {
