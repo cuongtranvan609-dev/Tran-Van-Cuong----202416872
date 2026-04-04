@@ -1,0 +1,18 @@
+- Java không cho phép tạo hai constructor như trong câu hỏi nếu chúng có cùng kiểu tham số.
+
+- Cụ thể, nếu định nghĩa:
+
+		DigitalVideoDisc(String title)
+		DigitalVideoDisc(String category)
+
+	thì cả hai constructor đều có một tham số kiểu String, nên Java sẽ coi chúng là trùng chữ ký phương thức (method signature) và gây lỗi khi biên dịch.
+
+- Giải thích:
+
+	Trong Java, việc nạp chồng (overloading) constructor chỉ hợp lệ khi các constructor khác nhau về số lượng hoặc kiểu dữ liệu của tham số, chứ không phân biệt tên tham số.
+
+	Do đó, mặc dù title và category có ý nghĩa khác nhau về mặt logic, nhưng vì chúng cùng kiểu String, nên Java không thể phân biệt được hai constructor này.
+
+- Kết luận:
+
+	Java không cho phép tạo hai constructor chỉ khác nhau về tên tham số. Để hợp lệ, cần thay đổi số lượng hoặc kiểu dữ liệu của tham số trong constructor.
