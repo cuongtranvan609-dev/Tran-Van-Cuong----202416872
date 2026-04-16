@@ -5,14 +5,19 @@ public class DigitalVideoDisc {
     private String category;
     private String director;
     private int length;
-    private float cost;
- 
-    // Getter & Setter
+    private double cost;
+
+    // ===== Getter =====
     public String getTitle() {
         return title;
     }
 
-    // Yêu cầu 3: Tạm thời thêm setter cho title để test truyền tham số 
+    // ============================
+    // [YÊU CẦU 3 - PASSING PARAMETER]
+    // Thêm setter cho thuộc tính title
+    // Mục đích: cho phép thay đổi title của object
+    // để kiểm tra cách Java truyền tham số (pass by value)
+    // ============================
     public void setTitle(String title) {
         this.title = title;
     }
@@ -29,50 +34,30 @@ public class DigitalVideoDisc {
         return length;
     }
 
-    public float getCost() {
+    public double getCost() {
         return cost;
     }
 
-    public int getId() {
-        return id;
-    }
+    // ===== Constructors =====
 
-    // Constructors
-    // Mỗi khi một instance được tạo, nbDigitalVideoDiscs phải được cập nhật và gán cho id 
-    
+    // Constructor 1: chỉ có title
     public DigitalVideoDisc(String title) {
         this.title = title;
-        nbDigitalVideoDiscs++;
-        this.id = nbDigitalVideoDiscs;
     }
 
-    public DigitalVideoDisc(String category, String title, float cost) {
-        this.category = category;
+    // Constructor 2: category, title, cost
+    public DigitalVideoDisc(String category, String title, double cost) {
         this.title = title;
+        this.category = category;
         this.cost = cost;
-        nbDigitalVideoDiscs++;
-        this.id = nbDigitalVideoDiscs;
     }
 
-    public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
+    // Constructor 3: đầy đủ thông tin
+    public DigitalVideoDisc(String title, String category, String director, int length, double cost) {
         this.title = title;
         this.category = category;
         this.director = director;
         this.length = length;
         this.cost = cost;
-        nbDigitalVideoDiscs++;
-        this.id = nbDigitalVideoDiscs;
-    }
-
-    // 6. Phương thức bổ sung 
-    @Override
-    public String toString() {
-        return "DVD - " + title + " - " + category + " - " + director + " - " + length + ": " + cost + " $";
-    }
-
-    // Kiểm tra tiêu đề có khớp để phục vụ hàm search 
-    public boolean isMatch(String title) {
-        
-        return this.title.equalsIgnoreCase(title);
     }
 }
