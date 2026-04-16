@@ -6,10 +6,7 @@ public class DigitalVideoDisc {
     private String director;
     private int length;
     private float cost;
-
-    // 5. Classifier Member và Instance Member 
-    private int id; // Thuộc tính instance 
-    private static int nbDigitalVideoDiscs = 0; // Thuộc tính class (static) 
+ 
     // Getter & Setter
     public String getTitle() {
         return title;
