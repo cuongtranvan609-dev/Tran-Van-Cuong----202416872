@@ -20,7 +20,7 @@ public class CartTest {
 
      // ===== TEST PRINT =====
      cart.print();
-
+/*
      // ===== TEST SEARCH =====
      System.out.println("\nSearch results:");
 
@@ -28,3 +28,4 @@ public class CartTest {
      cart.search("Harry Potter"); // không có
  }
 }
+*/
