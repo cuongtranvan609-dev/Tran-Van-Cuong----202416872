@@ -17,10 +17,10 @@ public class CartTest {
      DigitalVideoDisc dvd3 = new DigitalVideoDisc(
          "Aladin", "Hoạt hình", 18.99f);
      cart.addDigitalVideoDisc(dvd3);
-
+/*
      // ===== TEST PRINT =====
      cart.print();
-
+*/
      // ===== TEST SEARCH =====
      System.out.println("\nSearch results:");
 
