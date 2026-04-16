@@ -53,7 +53,7 @@ public class Cart {
     }
 
     // ================= YÊU CẦU 6 =================
-
+/*
     // In danh sách DVD trong cart
     public void print() {
         System.out.println("***************CART***************");
@@ -65,7 +65,7 @@ public class Cart {
         System.out.println("Total cost: " + totalCost());
         System.out.println("**********************************");
     }
-
+*/
     // Tìm kiếm theo title
     public void search(String title) {
         boolean found = false;
