@@ -1,0 +1,536 @@
+Đề tài lập trình hướng đối tượng
+Đề tài 1: Ứng dụng dữ liệu mạng xã hội để nâng cao hiệu quả trong logistics nhân đạo
+
+Trong những năm gần đây, thế giới đã chứng kiến sự gia tăng đáng kể về cả mức độ nghiêm trọng và tần suất của các thảm họa thiên nhiên, từ lũ lụt, bão, hạn hán đến đại dịch, tạo ra những thách thức lớn đối với phát triển kinh tế - xã hội. Trước những cuộc khủng hoảng như vậy, logistics nhân đạo nổi lên như một thành phần quan trọng của quản lý thảm họa, nâng cao hiệu quả của các hoạt động cứu trợ và giảm thiểu tác động bất lợi của thảm họa. Các nghiên cứu gần đây đã ngày càng cho thấy vai trò của việc ứng dụng dữ liệu mạng xã hội và phân tích tâm lý trong lĩnh vực logistics nhân đạo
+
+Thu thập dữ liệu: Twitter (X), Facebook, TikTok, Youtube và các nguồn khác. Cần chọn:
+•	Một thảm họa nào đó (bão Yagi, bão Bualoi, bão Matmo, ...)
+•	Từ khóa và hashtag phù hợp để thu thập dữ liệu.
+•	Chọn khung thời gian phù hợp
+
+Tùy chọn nhiều bộ tiền xử lý dữ liệu rồi giải quyết ít nhất 2-3/4 các bài toán sau, tùy độ khó dễ của các bài toán (khuyến khích đề xuất các bài toán mới có ý nghĩa)
+
+
+Bài toán 1: Theo dõi sự thay đổi tâm lý công chúng theo thời gian bằng cách phân tích số lượng post/comment tích cực/tiêu cực theo thời gian.
+
+Phân tích này giúp xác định cách tâm lý công chúng (tích cực hoặc tiêu cực) thay đổi trong suốt và sau thảm họa (Ví dụ với bão Yagi từ ngày 6 đến 10 tháng 9 năm 2024). Ví dụ, nghiên cứu chỉ ra rằng trong giai đoạn đầu (6-9 tháng 9), các tâm lý tiêu cực chiếm ưu thế, với đỉnh điểm vào ngày 8 tháng 9, phản ánh sự lo lắng và thất vọng của công chúng về tác động nghiêm trọng của cơn bão, như gián đoạn giao thông, thiệt hại cơ sở hạ tầng, và ảnh hưởng đến đời sống hàng ngày. Từ giữa tháng 9 trở đi, các tâm lý tích cực bắt đầu tăng, vượt qua tâm lý tiêu cực vào một số ngày, cho thấy sự chuyển đổi cảm xúc từ đau khổ sang hy vọng và đoàn kết.
+
+
+Bài toán 2: Xác định mức độ và loại thiệt hại phổ biến nhất. Phân tích này phân loại các bài đăng mạng xã hội thành năm danh mục thiệt hại chính: 
+•	Người bị ảnh hưởng
+•	Gián đoạn các hoạt động kinh tế sản xuất
+•	Nhà cửa hoặc tòa nhà bị hư hỏng
+•	Tài sản cá nhân bị mất
+•	Cơ sở hạ tầng bị hư hỏng
+•	Khác (SV tự đề xuất)
+
+Ví dụ: Kết quả cho thấy nhà cửa/tòa nhà bị hư hỏng có số lượng báo cáo cao nhất, tiếp theo là người bị ảnh hưởng và cơ sở hạ tầng bị hư hỏng. Điều này giúp xác định các loại thiệt hại được công chúng quan tâm và đề cập nhiều nhất, phản ánh mức độ nghiêm trọng của chúng trong khu vực bị ảnh hưởng bởi bão Yagi.
+
+Phân tích tần suất các bài đăng liên quan đến từng loại thiệt hại sẽ cung cấp một cái nhìn tổng quan về mức độ ảnh hưởng của thảm họa ở các khía cạnh khác nhau. Ví dụ, số lượng lớn các bài đăng về nhà cửa bị hư hỏng cho thấy đây là một vấn đề nghiêm trọng, đòi hỏi sự chú ý đặc biệt trong các nỗ lực phục hồi.
+
+
+Bài toán 3: Xác định mức độ hài lòng và không hài lòng của công chúng. Phân tích này giúp đánh giá tâm lý tích cực và tiêu cực liên quan đến các loại hàng cứu trợ thiết yếu như nhà ở, giao thông, thực phẩm, hỗ trợ y tế, và tiền mặt. Ví dụ, nghiên cứu chỉ ra rằng nhà ở và giao thông nhận được nhiều tâm lý tiêu cực nhất, cho thấy các nhu cầu chưa được đáp ứng đáng kể trong những lĩnh vực này, trong khi tiền mặt, thực phẩm, và hỗ trợ y tế có tỷ lệ tâm lý tích cực cao hơn, phản ánh sự hài lòng hoặc hiệu quả phân phối tốt hơn.
+
+Ý nghĩa: Hỗ trợ ưu tiên phân bổ nguồn lực. Bằng cách xác định các lĩnh vực cứu trợ nào được công chúng đánh giá tích cực hoặc tiêu cực, các cơ quan nhân đạo và chính phủ có thể ưu tiên phân bổ nguồn lực vào những lĩnh vực có nhu cầu cấp bách nhất (như nhà ở và giao thông). Điều này giúp cải thiện hiệu quả của các nỗ lực cứu trợ và đảm bảo rằng các nguồn lực được sử dụng một cách tối ưu.
+
+
+Bài toán 4: Theo dõi tâm lý theo từng loại hàng cứu trợ: Phân tích này cho phép quan sát cách tâm lý công chúng thay đổi theo thời gian đối với từng danh mục cứu trợ cụ thể (tiền mặt, y tế, nhà ở, thực phẩm, giao thông). Ví dụ: 
+•	Tiền mặt và thực phẩm cho thấy sự gia tăng mạnh mẽ trong các bài đăng tích cực với mức độ tiêu cực hạn chế, ngụ ý rằng các hoạt động phân phối viện trợ tài chính và thực phẩm được đánh giá cao và tương đối hiệu quả.
+•	Giao thông và nhà ở lại có sự tích lũy đáng kể của tâm lý tiêu cực, phản ánh những thách thức liên quan đến thiệt hại cơ sở hạ tầng kéo dài, hạn chế di chuyển, và bất an về chỗ ở.
+•	Y tế thể hiện sự gia tăng nhất quán trong tâm lý tích cực với mức độ tiêu cực tối thiểu, cho thấy các dịch vụ y tế dễ tiếp cận và được phối hợp tốt trong quá trình phục hồi.
+
+Xác định hiệu quả của các nỗ lực cứu trợ theo từng lĩnh vực: Bằng cách phân tích tâm lý theo thời gian cho từng loại hàng cứu trợ, nghiên cứu cung cấp cái nhìn chi tiết về hiệu quả của các hoạt động logistics nhân đạo trong từng lĩnh vực. Ví dụ, tâm lý tích cực liên quan đến y tế và thực phẩm cho thấy các nỗ lực trong những lĩnh vực này thành công, trong khi tâm lý tiêu cực về nhà ở và giao thông chỉ ra các khoảng trống cần được giải quyết.
+
+Yêu cầu:
+Viết ứng dụng Java desktop. Viết bộ thu thập dữ liệu, bộ tiền xử lý dữ liệu và các bộ phân tích dữ liệu cho các bài toán nói trên
+
+Cần có sự tối ưu và linh động trong thiết kế. VD: dễ dàng thêm nguồn dữ liệu mới, dễ dàng thay đổi từ khóa, các loại thiệt hại, các loại mặt hàng cứu trợ. Dễ dàng cập nhật các yêu cầu cho các bài toán nói trên. Dễ dàng thay đổi mô hình đánh giá tiêu cực, tích cực. Dễ dàng cập nhật thêm, bỏ các bài toán.
+
+Duy nhất phần mô hình phân tích được phép code bằng Python (khuyến khích làm bằng Java). Nếu mô hình phân tích code bằng Python, cần cung cấp thành API để phần mã nguồn Java gọi. Mô hình hóa thật rõ ràng và tối ưu đầu vào/đầu ra dữ liệu cho các API này. Sau này có thể đổi sang các API khác. Thậm chí dễ dàng thay đổi phần mô hình viết bằng Python bằng mô hình viết bằng Java.
+
+Phân tích rõ giải pháp đã giải quyết được các yêu cầu nói trên như thế nào.
+Đề tài 2: Hệ thống Mô phỏng Giao thông Đô thị (Smart City Traffic Simulation)
+Xây dựng một ứng dụng mô phỏng luồng giao thông tại (1) một ngã ba, (2) một ngã tư, và (3) một ngã năm, (4) mở rộng trên một vùng rộng gồm mạng lưới đường đi với nhiều loại ngã rẽ. Tại một ngã rẽ thì phương tiện, các hình ảnh sẽ to lên. Tại vùng giao thông rộng hơn thì các hình ảnh nhỏ đi cho phù hợp. Cần xây dựng ít nhất 5 loại phương tiện, trong đó bắt buộc có xe cá nhân như ô tô/xe máy/xe đạp và xe ưu tiên như xe cứu thương/cứu hỏa).
+•	Số lượng phương tiện: Có thể tùy chỉnh lưu lượng (ít hoặc đông đúc).
+•	Điều khiển: Có thể chọn chế độ tự động (đèn giao thông tự chuyển) hoặc thủ công (người dùng click vào đèn để chuyển màu).
+•	Tương tác: Xe phải biết dừng khi đèn đỏ, biết giữ khoảng cách với xe trước, và xe ưu tiên phải được các xe khác "nhường đường" (giảm tốc hoặc dạt sang). Các xe có thẻ vượt nhau, nhưng vượt sao cho không gây ra va chạm
+•	Âm thanh: Nên có các âm thanh đi kèm các loại xe, âm thanh của xe xi-nhan, còi xe xin vượt, ...
+•	Đèn giao thông: có nhiều loại, loại đếm số giây, loại không đếm số giây, loại chỉ đếm số giây khi còn 10 giây 
+2. Yêu cầu về kỹ thuật
+•	Tính tái sử dụng (Extensibility): Phải dễ dàng thêm loại xe mới (ví dụ: xe buýt, xe đạp), bạn chỉ cần kế thừa mà không được sửa code của bộ điều khiển giao thông (TrafficController). Dễ dàng thêm loại ngã rẽ, thay đổi vùng giao thông các cung đường
+•	Hai chế độ hiển thị (GUI):
+o	Basic: Các phương tiện chỉ là những khối hình chữ nhật đơn giản (Square/Rect) có ghi tên (vd: "Car", "Ambu").
+o	Đồ họa: Sử dụng hình ảnh (Image/Sprite) các loại xe xoay theo hướng di chuyển, có hiệu ứng đèn nháy cho xe cứu thương.
+o	Yêu cầu: Tách biệt hoàn toàn Logic xử lý tọa độ và Logic vẽ hình.
+•	Thuật toán di chuyển: Mỗi loại xe có một "phong cách" lái khác nhau. Ví dụ: NormalDriver (tuân thủ đèn), AggressiveDriver (phóng nhanh), hoặc EmergencyDriver (vượt đèn đỏ).
+o	Thiết kế sao cho dễ dàng thay đổi "bộ não" lái xe của từng phương tiện.
+
+Đề tài 3: Hệ thống Mô phỏng Hệ sinh thái Hoang dã (Wild-Life Eco Simulation)
+1. Mô tả thế giới
+Xây dựng một môi trường gồm (1) Đồng cỏ, (2) Khu rừng rậm, (3) Hồ nước và (4) Một bản đồ tổng hợp kết hợp cả ba vùng trên.
+•	Kích thước: Khi ở vùng hồ nước nhỏ, các con vật (cá, vịt) hiện to. Khi xem toàn bản đồ rừng, các thực thể thu nhỏ lại để thấy được sự di chuyển tổng thể.
+•	Đối tượng (Ít nhất 5 loại thực thể):
+o	Thực vật: Cỏ, Cây ăn quả (tự sinh sôi theo thời gian).
+o	Động vật ăn cỏ: Thỏ, Hươu (hiền lành, chạy trốn khi gặp nguy hiểm).
+o	Động vật ăn thịt: Sói, Hổ (săn đuổi động vật ăn cỏ).
+o	Động vật đặc biệt (Ưu tiên): Con người (Thợ săn) hoặc Động vật đầu bảng (Voi) - các thực thể có quyền ưu tiên di chuyển hoặc không sợ kẻ thù.
+•	Số lượng: Tùy chỉnh lưu lượng (mùa sinh sản thì đông, mùa hạn hán thì ít).
+•	Điều khiển:
+o	Tự động: Các loài tự tìm thức ăn, nước uống dựa trên bản năng.
+o	Thủ công: Người dùng click vào một vùng để "gieo mầm" thức ăn hoặc đặt vật cản (vách đá).
+•	Tương tác:
+o	Con vật biết Dừng khi gặp vật cản hoặc Uống nước khi khát.
+o	Cơ chế "Nhường đường": Động vật nhỏ phải dạt sang một bên khi động vật lớn hoặc thú săn mồi đi qua.
+o	Săn đuổi & Vượt mặt: Sói có thể tăng tốc để đuổi kịp thỏ, thỏ có thể lách qua bụi rậm (nơi sói không vào được) để trốn thoát.
+•	Âm thanh: Tiếng chim hót, tiếng gầm của hổ khi phát hiện con mồi, tiếng bước chân sột soạt trên lá khô, ...
+
+2. Yêu cầu kỹ thuật (OOP Standard)
+•	Tính tái sử dụng (Extensibility):
+o	Phải dễ dàng thêm loài mới (ví dụ: Chim ưng, Cá sấu) bằng cách kế thừa lớp cũ
+o	Dễ dàng thay đổi môi trường (Địa hình: Đất, Nước, Bùn) ảnh hưởng đến tốc độ di chuyển của từng loài.
+•	Hai chế độ hiển thị (GUI):
+o	Basic: Các con vật là các hình tròn/vuông màu sắc khác nhau (VD: Đỏ là Cáo, Xanh lá là Thỏ).
+o	Đồ họa: Sử dụng ảnh động (Gif/Sprite) thể hiện hành động chạy, ăn, hoặc nằm ngủ.
+o	Yêu cầu: Tách biệt BioLogic (tính toán sinh tồn, đói bụng, khát) và ViewLogic (vẽ lên màn hình).
+•	Thuật toán di chuyển: Mỗi loài có một "Chiến lược sinh tồn" (Survival Strategy):
+o	PassiveStrategy: Chỉ đi lang thang và ăn cỏ.
+o	HunterStrategy: Luôn quét tìm mục tiêu trong bán kính X mét và tấn công.
+o	ScaredStrategy: Luôn di chuyển ngược hướng với kẻ thù gần nhất.
+o	Dễ dàng thay đổi "bộ não" này (ví dụ: Con thỏ khi đói quá có thể trở nên liều lĩnh - AggressiveStrategy).
+
+Cách thức nộp bài tập lớn
+
+Các yêu cầu:
+•	Tất cả cần nộp cùng 1 thời điểm: upload lên thư mục GG Drive + bản cứng báo cáo. Khi bảo vệ, các nhóm download xuống
+•	Sản phẩm cần nộp (lưu ý, nộp các file riêng lẻ, không nộp file zip
+o	Báo cáo
+o	Slide trình bày
+o	Video demo
+o	Mã nguồn chương trình
+o	Các file tài nguyên (Cần chạy chương trình ở nhà trước, để lấy được đủ dữ liệu)
+o	Nộp báo cáo bản cứng 
+•	Báo cáo:
+o	Phân công công việc các thành viên trong nhóm
+o	% đóng góp (con số lượng hóa cụ thể) của từng thành viên
+o	Chi tiết nhật ký làm việc nhóm
+o	Cần có bảng thống kê về dữ liệu thu thập được
+o	Vẽ biểu đồ UML
+	Biểu đồ phụ thuộc gói
+	Biểu đồ lớp
+o	Giải thích thiết kế
+	Các gói (package) 
+	Các lớp
+o	Giải thích các kỹ thuật lập trình hướng đối tượng đã áp dụng
+	Nhóm đã áp dụng kỹ thuật gì, ở đâu, lợi ích đem lại là gì
+o	Liệt kê công nghệ sử dụng, thuật toán hay (nếu có)
+o	Hướng dẫn sử dụng ngắn gọn + 1 số ảnh quan trọng demo chương trình
+•	Thuyết trình:
+o	Gợi ý nội dung trình bày tối thiểu
+	Demo chương trình – mở video
+	Thiết kế
+•	Giới thiệu thiết kế (các package, các lớp, …)
+•	Giải thích các kỹ thuật OOP đã áp dụng như thế nào, lợi ích đem lại là gì? 
+
+Đề tài lập trình hướng đối tượng
+Đề tài 1: Ứng dụng dữ liệu mạng xã hội để nâng cao hiệu quả trong logistics nhân đạo
+
+Trong những năm gần đây, thế giới đã chứng kiến sự gia tăng đáng kể về cả mức độ nghiêm trọng và tần suất của các thảm họa thiên nhiên, từ lũ lụt, bão, hạn hán đến đại dịch, tạo ra những thách thức lớn đối với phát triển kinh tế - xã hội. Trước những cuộc khủng hoảng như vậy, logistics nhân đạo nổi lên như một thành phần quan trọng của quản lý thảm họa, nâng cao hiệu quả của các hoạt động cứu trợ và giảm thiểu tác động bất lợi của thảm họa. Các nghiên cứu gần đây đã ngày càng cho thấy vai trò của việc ứng dụng dữ liệu mạng xã hội và phân tích tâm lý trong lĩnh vực logistics nhân đạo
+
+Thu thập dữ liệu: Twitter (X), Facebook, TikTok, Youtube và các nguồn khác. Cần chọn:
+•	Một thảm họa nào đó (bão Yagi, bão Bualoi, bão Matmo, ...)
+•	Từ khóa và hashtag phù hợp để thu thập dữ liệu.
+•	Chọn khung thời gian phù hợp
+
+Tùy chọn nhiều bộ tiền xử lý dữ liệu rồi giải quyết ít nhất 2-3/4 các bài toán sau, tùy độ khó dễ của các bài toán (khuyến khích đề xuất các bài toán mới có ý nghĩa)
+
+
+Bài toán 1: Theo dõi sự thay đổi tâm lý công chúng theo thời gian bằng cách phân tích số lượng post/comment tích cực/tiêu cực theo thời gian.
+
+Phân tích này giúp xác định cách tâm lý công chúng (tích cực hoặc tiêu cực) thay đổi trong suốt và sau thảm họa (Ví dụ với bão Yagi từ ngày 6 đến 10 tháng 9 năm 2024). Ví dụ, nghiên cứu chỉ ra rằng trong giai đoạn đầu (6-9 tháng 9), các tâm lý tiêu cực chiếm ưu thế, với đỉnh điểm vào ngày 8 tháng 9, phản ánh sự lo lắng và thất vọng của công chúng về tác động nghiêm trọng của cơn bão, như gián đoạn giao thông, thiệt hại cơ sở hạ tầng, và ảnh hưởng đến đời sống hàng ngày. Từ giữa tháng 9 trở đi, các tâm lý tích cực bắt đầu tăng, vượt qua tâm lý tiêu cực vào một số ngày, cho thấy sự chuyển đổi cảm xúc từ đau khổ sang hy vọng và đoàn kết.
+
+
+Bài toán 2: Xác định mức độ và loại thiệt hại phổ biến nhất. Phân tích này phân loại các bài đăng mạng xã hội thành năm danh mục thiệt hại chính: 
+•	Người bị ảnh hưởng
+•	Gián đoạn các hoạt động kinh tế sản xuất
+•	Nhà cửa hoặc tòa nhà bị hư hỏng
+•	Tài sản cá nhân bị mất
+•	Cơ sở hạ tầng bị hư hỏng
+•	Khác (SV tự đề xuất)
+
+Ví dụ: Kết quả cho thấy nhà cửa/tòa nhà bị hư hỏng có số lượng báo cáo cao nhất, tiếp theo là người bị ảnh hưởng và cơ sở hạ tầng bị hư hỏng. Điều này giúp xác định các loại thiệt hại được công chúng quan tâm và đề cập nhiều nhất, phản ánh mức độ nghiêm trọng của chúng trong khu vực bị ảnh hưởng bởi bão Yagi.
+
+Phân tích tần suất các bài đăng liên quan đến từng loại thiệt hại sẽ cung cấp một cái nhìn tổng quan về mức độ ảnh hưởng của thảm họa ở các khía cạnh khác nhau. Ví dụ, số lượng lớn các bài đăng về nhà cửa bị hư hỏng cho thấy đây là một vấn đề nghiêm trọng, đòi hỏi sự chú ý đặc biệt trong các nỗ lực phục hồi.
+
+
+Bài toán 3: Xác định mức độ hài lòng và không hài lòng của công chúng. Phân tích này giúp đánh giá tâm lý tích cực và tiêu cực liên quan đến các loại hàng cứu trợ thiết yếu như nhà ở, giao thông, thực phẩm, hỗ trợ y tế, và tiền mặt. Ví dụ, nghiên cứu chỉ ra rằng nhà ở và giao thông nhận được nhiều tâm lý tiêu cực nhất, cho thấy các nhu cầu chưa được đáp ứng đáng kể trong những lĩnh vực này, trong khi tiền mặt, thực phẩm, và hỗ trợ y tế có tỷ lệ tâm lý tích cực cao hơn, phản ánh sự hài lòng hoặc hiệu quả phân phối tốt hơn.
+
+Ý nghĩa: Hỗ trợ ưu tiên phân bổ nguồn lực. Bằng cách xác định các lĩnh vực cứu trợ nào được công chúng đánh giá tích cực hoặc tiêu cực, các cơ quan nhân đạo và chính phủ có thể ưu tiên phân bổ nguồn lực vào những lĩnh vực có nhu cầu cấp bách nhất (như nhà ở và giao thông). Điều này giúp cải thiện hiệu quả của các nỗ lực cứu trợ và đảm bảo rằng các nguồn lực được sử dụng một cách tối ưu.
+
+
+Bài toán 4: Theo dõi tâm lý theo từng loại hàng cứu trợ: Phân tích này cho phép quan sát cách tâm lý công chúng thay đổi theo thời gian đối với từng danh mục cứu trợ cụ thể (tiền mặt, y tế, nhà ở, thực phẩm, giao thông). Ví dụ: 
+•	Tiền mặt và thực phẩm cho thấy sự gia tăng mạnh mẽ trong các bài đăng tích cực với mức độ tiêu cực hạn chế, ngụ ý rằng các hoạt động phân phối viện trợ tài chính và thực phẩm được đánh giá cao và tương đối hiệu quả.
+•	Giao thông và nhà ở lại có sự tích lũy đáng kể của tâm lý tiêu cực, phản ánh những thách thức liên quan đến thiệt hại cơ sở hạ tầng kéo dài, hạn chế di chuyển, và bất an về chỗ ở.
+•	Y tế thể hiện sự gia tăng nhất quán trong tâm lý tích cực với mức độ tiêu cực tối thiểu, cho thấy các dịch vụ y tế dễ tiếp cận và được phối hợp tốt trong quá trình phục hồi.
+
+Xác định hiệu quả của các nỗ lực cứu trợ theo từng lĩnh vực: Bằng cách phân tích tâm lý theo thời gian cho từng loại hàng cứu trợ, nghiên cứu cung cấp cái nhìn chi tiết về hiệu quả của các hoạt động logistics nhân đạo trong từng lĩnh vực. Ví dụ, tâm lý tích cực liên quan đến y tế và thực phẩm cho thấy các nỗ lực trong những lĩnh vực này thành công, trong khi tâm lý tiêu cực về nhà ở và giao thông chỉ ra các khoảng trống cần được giải quyết.
+
+Yêu cầu:
+Viết ứng dụng Java desktop. Viết bộ thu thập dữ liệu, bộ tiền xử lý dữ liệu và các bộ phân tích dữ liệu cho các bài toán nói trên
+
+Cần có sự tối ưu và linh động trong thiết kế. VD: dễ dàng thêm nguồn dữ liệu mới, dễ dàng thay đổi từ khóa, các loại thiệt hại, các loại mặt hàng cứu trợ. Dễ dàng cập nhật các yêu cầu cho các bài toán nói trên. Dễ dàng thay đổi mô hình đánh giá tiêu cực, tích cực. Dễ dàng cập nhật thêm, bỏ các bài toán.
+
+Duy nhất phần mô hình phân tích được phép code bằng Python (khuyến khích làm bằng Java). Nếu mô hình phân tích code bằng Python, cần cung cấp thành API để phần mã nguồn Java gọi. Mô hình hóa thật rõ ràng và tối ưu đầu vào/đầu ra dữ liệu cho các API này. Sau này có thể đổi sang các API khác. Thậm chí dễ dàng thay đổi phần mô hình viết bằng Python bằng mô hình viết bằng Java.
+
+Phân tích rõ giải pháp đã giải quyết được các yêu cầu nói trên như thế nào.
+Đề tài 2: Hệ thống Mô phỏng Giao thông Đô thị (Smart City Traffic Simulation)
+Xây dựng một ứng dụng mô phỏng luồng giao thông tại (1) một ngã ba, (2) một ngã tư, và (3) một ngã năm, (4) mở rộng trên một vùng rộng gồm mạng lưới đường đi với nhiều loại ngã rẽ. Tại một ngã rẽ thì phương tiện, các hình ảnh sẽ to lên. Tại vùng giao thông rộng hơn thì các hình ảnh nhỏ đi cho phù hợp. Cần xây dựng ít nhất 5 loại phương tiện, trong đó bắt buộc có xe cá nhân như ô tô/xe máy/xe đạp và xe ưu tiên như xe cứu thương/cứu hỏa).
+•	Số lượng phương tiện: Có thể tùy chỉnh lưu lượng (ít hoặc đông đúc).
+•	Điều khiển: Có thể chọn chế độ tự động (đèn giao thông tự chuyển) hoặc thủ công (người dùng click vào đèn để chuyển màu).
+•	Tương tác: Xe phải biết dừng khi đèn đỏ, biết giữ khoảng cách với xe trước, và xe ưu tiên phải được các xe khác "nhường đường" (giảm tốc hoặc dạt sang). Các xe có thẻ vượt nhau, nhưng vượt sao cho không gây ra va chạm
+•	Âm thanh: Nên có các âm thanh đi kèm các loại xe, âm thanh của xe xi-nhan, còi xe xin vượt, ...
+•	Đèn giao thông: có nhiều loại, loại đếm số giây, loại không đếm số giây, loại chỉ đếm số giây khi còn 10 giây 
+2. Yêu cầu về kỹ thuật
+•	Tính tái sử dụng (Extensibility): Phải dễ dàng thêm loại xe mới (ví dụ: xe buýt, xe đạp), bạn chỉ cần kế thừa mà không được sửa code của bộ điều khiển giao thông (TrafficController). Dễ dàng thêm loại ngã rẽ, thay đổi vùng giao thông các cung đường
+•	Hai chế độ hiển thị (GUI):
+o	Basic: Các phương tiện chỉ là những khối hình chữ nhật đơn giản (Square/Rect) có ghi tên (vd: "Car", "Ambu").
+o	Đồ họa: Sử dụng hình ảnh (Image/Sprite) các loại xe xoay theo hướng di chuyển, có hiệu ứng đèn nháy cho xe cứu thương.
+o	Yêu cầu: Tách biệt hoàn toàn Logic xử lý tọa độ và Logic vẽ hình.
+•	Thuật toán di chuyển: Mỗi loại xe có một "phong cách" lái khác nhau. Ví dụ: NormalDriver (tuân thủ đèn), AggressiveDriver (phóng nhanh), hoặc EmergencyDriver (vượt đèn đỏ).
+o	Thiết kế sao cho dễ dàng thay đổi "bộ não" lái xe của từng phương tiện.
+
+Đề tài 3: Hệ thống Mô phỏng Hệ sinh thái Hoang dã (Wild-Life Eco Simulation)
+1. Mô tả thế giới
+Xây dựng một môi trường gồm (1) Đồng cỏ, (2) Khu rừng rậm, (3) Hồ nước và (4) Một bản đồ tổng hợp kết hợp cả ba vùng trên.
+•	Kích thước: Khi ở vùng hồ nước nhỏ, các con vật (cá, vịt) hiện to. Khi xem toàn bản đồ rừng, các thực thể thu nhỏ lại để thấy được sự di chuyển tổng thể.
+•	Đối tượng (Ít nhất 5 loại thực thể):
+o	Thực vật: Cỏ, Cây ăn quả (tự sinh sôi theo thời gian).
+o	Động vật ăn cỏ: Thỏ, Hươu (hiền lành, chạy trốn khi gặp nguy hiểm).
+o	Động vật ăn thịt: Sói, Hổ (săn đuổi động vật ăn cỏ).
+o	Động vật đặc biệt (Ưu tiên): Con người (Thợ săn) hoặc Động vật đầu bảng (Voi) - các thực thể có quyền ưu tiên di chuyển hoặc không sợ kẻ thù.
+•	Số lượng: Tùy chỉnh lưu lượng (mùa sinh sản thì đông, mùa hạn hán thì ít).
+•	Điều khiển:
+o	Tự động: Các loài tự tìm thức ăn, nước uống dựa trên bản năng.
+o	Thủ công: Người dùng click vào một vùng để "gieo mầm" thức ăn hoặc đặt vật cản (vách đá).
+•	Tương tác:
+o	Con vật biết Dừng khi gặp vật cản hoặc Uống nước khi khát.
+o	Cơ chế "Nhường đường": Động vật nhỏ phải dạt sang một bên khi động vật lớn hoặc thú săn mồi đi qua.
+o	Săn đuổi & Vượt mặt: Sói có thể tăng tốc để đuổi kịp thỏ, thỏ có thể lách qua bụi rậm (nơi sói không vào được) để trốn thoát.
+•	Âm thanh: Tiếng chim hót, tiếng gầm của hổ khi phát hiện con mồi, tiếng bước chân sột soạt trên lá khô, ...
+
+2. Yêu cầu kỹ thuật (OOP Standard)
+•	Tính tái sử dụng (Extensibility):
+o	Phải dễ dàng thêm loài mới (ví dụ: Chim ưng, Cá sấu) bằng cách kế thừa lớp cũ
+o	Dễ dàng thay đổi môi trường (Địa hình: Đất, Nước, Bùn) ảnh hưởng đến tốc độ di chuyển của từng loài.
+•	Hai chế độ hiển thị (GUI):
+o	Basic: Các con vật là các hình tròn/vuông màu sắc khác nhau (VD: Đỏ là Cáo, Xanh lá là Thỏ).
+o	Đồ họa: Sử dụng ảnh động (Gif/Sprite) thể hiện hành động chạy, ăn, hoặc nằm ngủ.
+o	Yêu cầu: Tách biệt BioLogic (tính toán sinh tồn, đói bụng, khát) và ViewLogic (vẽ lên màn hình).
+•	Thuật toán di chuyển: Mỗi loài có một "Chiến lược sinh tồn" (Survival Strategy):
+o	PassiveStrategy: Chỉ đi lang thang và ăn cỏ.
+o	HunterStrategy: Luôn quét tìm mục tiêu trong bán kính X mét và tấn công.
+o	ScaredStrategy: Luôn di chuyển ngược hướng với kẻ thù gần nhất.
+o	Dễ dàng thay đổi "bộ não" này (ví dụ: Con thỏ khi đói quá có thể trở nên liều lĩnh - AggressiveStrategy).
+
+Cách thức nộp bài tập lớn
+
+Các yêu cầu:
+•	Tất cả cần nộp cùng 1 thời điểm: upload lên thư mục GG Drive + bản cứng báo cáo. Khi bảo vệ, các nhóm download xuống
+•	Sản phẩm cần nộp (lưu ý, nộp các file riêng lẻ, không nộp file zip
+o	Báo cáo
+o	Slide trình bày
+o	Video demo
+o	Mã nguồn chương trình
+o	Các file tài nguyên (Cần chạy chương trình ở nhà trước, để lấy được đủ dữ liệu)
+o	Nộp báo cáo bản cứng 
+•	Báo cáo:
+o	Phân công công việc các thành viên trong nhóm
+o	% đóng góp (con số lượng hóa cụ thể) của từng thành viên
+o	Chi tiết nhật ký làm việc nhóm
+o	Cần có bảng thống kê về dữ liệu thu thập được
+o	Vẽ biểu đồ UML
+	Biểu đồ phụ thuộc gói
+	Biểu đồ lớp
+o	Giải thích thiết kế
+	Các gói (package) 
+	Các lớp
+o	Giải thích các kỹ thuật lập trình hướng đối tượng đã áp dụng
+	Nhóm đã áp dụng kỹ thuật gì, ở đâu, lợi ích đem lại là gì
+o	Liệt kê công nghệ sử dụng, thuật toán hay (nếu có)
+o	Hướng dẫn sử dụng ngắn gọn + 1 số ảnh quan trọng demo chương trình
+•	Thuyết trình:
+o	Gợi ý nội dung trình bày tối thiểu
+	Demo chương trình – mở video
+	Thiết kế
+•	Giới thiệu thiết kế (các package, các lớp, …)
+•	Giải thích các kỹ thuật OOP đã áp dụng như thế nào, lợi ích đem lại là gì? 
+
+
+Đề tài lập trình hướng đối tượng
+Đề tài 1: Ứng dụng dữ liệu mạng xã hội để nâng cao hiệu quả trong logistics nhân đạo
+
+Trong những năm gần đây, thế giới đã chứng kiến sự gia tăng đáng kể về cả mức độ nghiêm trọng và tần suất của các thảm họa thiên nhiên, từ lũ lụt, bão, hạn hán đến đại dịch, tạo ra những thách thức lớn đối với phát triển kinh tế - xã hội. Trước những cuộc khủng hoảng như vậy, logistics nhân đạo nổi lên như một thành phần quan trọng của quản lý thảm họa, nâng cao hiệu quả của các hoạt động cứu trợ và giảm thiểu tác động bất lợi của thảm họa. Các nghiên cứu gần đây đã ngày càng cho thấy vai trò của việc ứng dụng dữ liệu mạng xã hội và phân tích tâm lý trong lĩnh vực logistics nhân đạo
+
+Thu thập dữ liệu: Twitter (X), Facebook, TikTok, Youtube và các nguồn khác. Cần chọn:
+•	Một thảm họa nào đó (bão Yagi, bão Bualoi, bão Matmo, ...)
+•	Từ khóa và hashtag phù hợp để thu thập dữ liệu.
+•	Chọn khung thời gian phù hợp
+
+Tùy chọn nhiều bộ tiền xử lý dữ liệu rồi giải quyết ít nhất 2-3/4 các bài toán sau, tùy độ khó dễ của các bài toán (khuyến khích đề xuất các bài toán mới có ý nghĩa)
+
+
+Bài toán 1: Theo dõi sự thay đổi tâm lý công chúng theo thời gian bằng cách phân tích số lượng post/comment tích cực/tiêu cực theo thời gian.
+
+Phân tích này giúp xác định cách tâm lý công chúng (tích cực hoặc tiêu cực) thay đổi trong suốt và sau thảm họa (Ví dụ với bão Yagi từ ngày 6 đến 10 tháng 9 năm 2024). Ví dụ, nghiên cứu chỉ ra rằng trong giai đoạn đầu (6-9 tháng 9), các tâm lý tiêu cực chiếm ưu thế, với đỉnh điểm vào ngày 8 tháng 9, phản ánh sự lo lắng và thất vọng của công chúng về tác động nghiêm trọng của cơn bão, như gián đoạn giao thông, thiệt hại cơ sở hạ tầng, và ảnh hưởng đến đời sống hàng ngày. Từ giữa tháng 9 trở đi, các tâm lý tích cực bắt đầu tăng, vượt qua tâm lý tiêu cực vào một số ngày, cho thấy sự chuyển đổi cảm xúc từ đau khổ sang hy vọng và đoàn kết.
+
+
+Bài toán 2: Xác định mức độ và loại thiệt hại phổ biến nhất. Phân tích này phân loại các bài đăng mạng xã hội thành năm danh mục thiệt hại chính: 
+•	Người bị ảnh hưởng
+•	Gián đoạn các hoạt động kinh tế sản xuất
+•	Nhà cửa hoặc tòa nhà bị hư hỏng
+•	Tài sản cá nhân bị mất
+•	Cơ sở hạ tầng bị hư hỏng
+•	Khác (SV tự đề xuất)
+
+Ví dụ: Kết quả cho thấy nhà cửa/tòa nhà bị hư hỏng có số lượng báo cáo cao nhất, tiếp theo là người bị ảnh hưởng và cơ sở hạ tầng bị hư hỏng. Điều này giúp xác định các loại thiệt hại được công chúng quan tâm và đề cập nhiều nhất, phản ánh mức độ nghiêm trọng của chúng trong khu vực bị ảnh hưởng bởi bão Yagi.
+
+Phân tích tần suất các bài đăng liên quan đến từng loại thiệt hại sẽ cung cấp một cái nhìn tổng quan về mức độ ảnh hưởng của thảm họa ở các khía cạnh khác nhau. Ví dụ, số lượng lớn các bài đăng về nhà cửa bị hư hỏng cho thấy đây là một vấn đề nghiêm trọng, đòi hỏi sự chú ý đặc biệt trong các nỗ lực phục hồi.
+
+
+Bài toán 3: Xác định mức độ hài lòng và không hài lòng của công chúng. Phân tích này giúp đánh giá tâm lý tích cực và tiêu cực liên quan đến các loại hàng cứu trợ thiết yếu như nhà ở, giao thông, thực phẩm, hỗ trợ y tế, và tiền mặt. Ví dụ, nghiên cứu chỉ ra rằng nhà ở và giao thông nhận được nhiều tâm lý tiêu cực nhất, cho thấy các nhu cầu chưa được đáp ứng đáng kể trong những lĩnh vực này, trong khi tiền mặt, thực phẩm, và hỗ trợ y tế có tỷ lệ tâm lý tích cực cao hơn, phản ánh sự hài lòng hoặc hiệu quả phân phối tốt hơn.
+
+Ý nghĩa: Hỗ trợ ưu tiên phân bổ nguồn lực. Bằng cách xác định các lĩnh vực cứu trợ nào được công chúng đánh giá tích cực hoặc tiêu cực, các cơ quan nhân đạo và chính phủ có thể ưu tiên phân bổ nguồn lực vào những lĩnh vực có nhu cầu cấp bách nhất (như nhà ở và giao thông). Điều này giúp cải thiện hiệu quả của các nỗ lực cứu trợ và đảm bảo rằng các nguồn lực được sử dụng một cách tối ưu.
+
+
+Bài toán 4: Theo dõi tâm lý theo từng loại hàng cứu trợ: Phân tích này cho phép quan sát cách tâm lý công chúng thay đổi theo thời gian đối với từng danh mục cứu trợ cụ thể (tiền mặt, y tế, nhà ở, thực phẩm, giao thông). Ví dụ: 
+•	Tiền mặt và thực phẩm cho thấy sự gia tăng mạnh mẽ trong các bài đăng tích cực với mức độ tiêu cực hạn chế, ngụ ý rằng các hoạt động phân phối viện trợ tài chính và thực phẩm được đánh giá cao và tương đối hiệu quả.
+•	Giao thông và nhà ở lại có sự tích lũy đáng kể của tâm lý tiêu cực, phản ánh những thách thức liên quan đến thiệt hại cơ sở hạ tầng kéo dài, hạn chế di chuyển, và bất an về chỗ ở.
+•	Y tế thể hiện sự gia tăng nhất quán trong tâm lý tích cực với mức độ tiêu cực tối thiểu, cho thấy các dịch vụ y tế dễ tiếp cận và được phối hợp tốt trong quá trình phục hồi.
+
+Xác định hiệu quả của các nỗ lực cứu trợ theo từng lĩnh vực: Bằng cách phân tích tâm lý theo thời gian cho từng loại hàng cứu trợ, nghiên cứu cung cấp cái nhìn chi tiết về hiệu quả của các hoạt động logistics nhân đạo trong từng lĩnh vực. Ví dụ, tâm lý tích cực liên quan đến y tế và thực phẩm cho thấy các nỗ lực trong những lĩnh vực này thành công, trong khi tâm lý tiêu cực về nhà ở và giao thông chỉ ra các khoảng trống cần được giải quyết.
+
+Yêu cầu:
+Viết ứng dụng Java desktop. Viết bộ thu thập dữ liệu, bộ tiền xử lý dữ liệu và các bộ phân tích dữ liệu cho các bài toán nói trên
+
+Cần có sự tối ưu và linh động trong thiết kế. VD: dễ dàng thêm nguồn dữ liệu mới, dễ dàng thay đổi từ khóa, các loại thiệt hại, các loại mặt hàng cứu trợ. Dễ dàng cập nhật các yêu cầu cho các bài toán nói trên. Dễ dàng thay đổi mô hình đánh giá tiêu cực, tích cực. Dễ dàng cập nhật thêm, bỏ các bài toán.
+
+Duy nhất phần mô hình phân tích được phép code bằng Python (khuyến khích làm bằng Java). Nếu mô hình phân tích code bằng Python, cần cung cấp thành API để phần mã nguồn Java gọi. Mô hình hóa thật rõ ràng và tối ưu đầu vào/đầu ra dữ liệu cho các API này. Sau này có thể đổi sang các API khác. Thậm chí dễ dàng thay đổi phần mô hình viết bằng Python bằng mô hình viết bằng Java.
+
+Phân tích rõ giải pháp đã giải quyết được các yêu cầu nói trên như thế nào.
+Đề tài 2: Hệ thống Mô phỏng Giao thông Đô thị (Smart City Traffic Simulation)
+Xây dựng một ứng dụng mô phỏng luồng giao thông tại (1) một ngã ba, (2) một ngã tư, và (3) một ngã năm, (4) mở rộng trên một vùng rộng gồm mạng lưới đường đi với nhiều loại ngã rẽ. Tại một ngã rẽ thì phương tiện, các hình ảnh sẽ to lên. Tại vùng giao thông rộng hơn thì các hình ảnh nhỏ đi cho phù hợp. Cần xây dựng ít nhất 5 loại phương tiện, trong đó bắt buộc có xe cá nhân như ô tô/xe máy/xe đạp và xe ưu tiên như xe cứu thương/cứu hỏa).
+•	Số lượng phương tiện: Có thể tùy chỉnh lưu lượng (ít hoặc đông đúc).
+•	Điều khiển: Có thể chọn chế độ tự động (đèn giao thông tự chuyển) hoặc thủ công (người dùng click vào đèn để chuyển màu).
+•	Tương tác: Xe phải biết dừng khi đèn đỏ, biết giữ khoảng cách với xe trước, và xe ưu tiên phải được các xe khác "nhường đường" (giảm tốc hoặc dạt sang). Các xe có thẻ vượt nhau, nhưng vượt sao cho không gây ra va chạm
+•	Âm thanh: Nên có các âm thanh đi kèm các loại xe, âm thanh của xe xi-nhan, còi xe xin vượt, ...
+•	Đèn giao thông: có nhiều loại, loại đếm số giây, loại không đếm số giây, loại chỉ đếm số giây khi còn 10 giây 
+2. Yêu cầu về kỹ thuật
+•	Tính tái sử dụng (Extensibility): Phải dễ dàng thêm loại xe mới (ví dụ: xe buýt, xe đạp), bạn chỉ cần kế thừa mà không được sửa code của bộ điều khiển giao thông (TrafficController). Dễ dàng thêm loại ngã rẽ, thay đổi vùng giao thông các cung đường
+•	Hai chế độ hiển thị (GUI):
+o	Basic: Các phương tiện chỉ là những khối hình chữ nhật đơn giản (Square/Rect) có ghi tên (vd: "Car", "Ambu").
+o	Đồ họa: Sử dụng hình ảnh (Image/Sprite) các loại xe xoay theo hướng di chuyển, có hiệu ứng đèn nháy cho xe cứu thương.
+o	Yêu cầu: Tách biệt hoàn toàn Logic xử lý tọa độ và Logic vẽ hình.
+•	Thuật toán di chuyển: Mỗi loại xe có một "phong cách" lái khác nhau. Ví dụ: NormalDriver (tuân thủ đèn), AggressiveDriver (phóng nhanh), hoặc EmergencyDriver (vượt đèn đỏ).
+o	Thiết kế sao cho dễ dàng thay đổi "bộ não" lái xe của từng phương tiện.
+
+Đề tài 3: Hệ thống Mô phỏng Hệ sinh thái Hoang dã (Wild-Life Eco Simulation)
+1. Mô tả thế giới
+Xây dựng một môi trường gồm (1) Đồng cỏ, (2) Khu rừng rậm, (3) Hồ nước và (4) Một bản đồ tổng hợp kết hợp cả ba vùng trên.
+•	Kích thước: Khi ở vùng hồ nước nhỏ, các con vật (cá, vịt) hiện to. Khi xem toàn bản đồ rừng, các thực thể thu nhỏ lại để thấy được sự di chuyển tổng thể.
+•	Đối tượng (Ít nhất 5 loại thực thể):
+o	Thực vật: Cỏ, Cây ăn quả (tự sinh sôi theo thời gian).
+o	Động vật ăn cỏ: Thỏ, Hươu (hiền lành, chạy trốn khi gặp nguy hiểm).
+o	Động vật ăn thịt: Sói, Hổ (săn đuổi động vật ăn cỏ).
+o	Động vật đặc biệt (Ưu tiên): Con người (Thợ săn) hoặc Động vật đầu bảng (Voi) - các thực thể có quyền ưu tiên di chuyển hoặc không sợ kẻ thù.
+•	Số lượng: Tùy chỉnh lưu lượng (mùa sinh sản thì đông, mùa hạn hán thì ít).
+•	Điều khiển:
+o	Tự động: Các loài tự tìm thức ăn, nước uống dựa trên bản năng.
+o	Thủ công: Người dùng click vào một vùng để "gieo mầm" thức ăn hoặc đặt vật cản (vách đá).
+•	Tương tác:
+o	Con vật biết Dừng khi gặp vật cản hoặc Uống nước khi khát.
+o	Cơ chế "Nhường đường": Động vật nhỏ phải dạt sang một bên khi động vật lớn hoặc thú săn mồi đi qua.
+o	Săn đuổi & Vượt mặt: Sói có thể tăng tốc để đuổi kịp thỏ, thỏ có thể lách qua bụi rậm (nơi sói không vào được) để trốn thoát.
+•	Âm thanh: Tiếng chim hót, tiếng gầm của hổ khi phát hiện con mồi, tiếng bước chân sột soạt trên lá khô, ...
+
+2. Yêu cầu kỹ thuật (OOP Standard)
+•	Tính tái sử dụng (Extensibility):
+o	Phải dễ dàng thêm loài mới (ví dụ: Chim ưng, Cá sấu) bằng cách kế thừa lớp cũ
+o	Dễ dàng thay đổi môi trường (Địa hình: Đất, Nước, Bùn) ảnh hưởng đến tốc độ di chuyển của từng loài.
+•	Hai chế độ hiển thị (GUI):
+o	Basic: Các con vật là các hình tròn/vuông màu sắc khác nhau (VD: Đỏ là Cáo, Xanh lá là Thỏ).
+o	Đồ họa: Sử dụng ảnh động (Gif/Sprite) thể hiện hành động chạy, ăn, hoặc nằm ngủ.
+o	Yêu cầu: Tách biệt BioLogic (tính toán sinh tồn, đói bụng, khát) và ViewLogic (vẽ lên màn hình).
+•	Thuật toán di chuyển: Mỗi loài có một "Chiến lược sinh tồn" (Survival Strategy):
+o	PassiveStrategy: Chỉ đi lang thang và ăn cỏ.
+o	HunterStrategy: Luôn quét tìm mục tiêu trong bán kính X mét và tấn công.
+o	ScaredStrategy: Luôn di chuyển ngược hướng với kẻ thù gần nhất.
+o	Dễ dàng thay đổi "bộ não" này (ví dụ: Con thỏ khi đói quá có thể trở nên liều lĩnh - AggressiveStrategy).
+
+Cách thức nộp bài tập lớn
+
+Các yêu cầu:
+•	Tất cả cần nộp cùng 1 thời điểm: upload lên thư mục GG Drive + bản cứng báo cáo. Khi bảo vệ, các nhóm download xuống
+•	Sản phẩm cần nộp (lưu ý, nộp các file riêng lẻ, không nộp file zip
+o	Báo cáo
+o	Slide trình bày
+o	Video demo
+o	Mã nguồn chương trình
+o	Các file tài nguyên (Cần chạy chương trình ở nhà trước, để lấy được đủ dữ liệu)
+o	Nộp báo cáo bản cứng 
+•	Báo cáo:
+o	Phân công công việc các thành viên trong nhóm
+o	% đóng góp (con số lượng hóa cụ thể) của từng thành viên
+o	Chi tiết nhật ký làm việc nhóm
+o	Cần có bảng thống kê về dữ liệu thu thập được
+o	Vẽ biểu đồ UML
+	Biểu đồ phụ thuộc gói
+	Biểu đồ lớp
+o	Giải thích thiết kế
+	Các gói (package) 
+	Các lớp
+o	Giải thích các kỹ thuật lập trình hướng đối tượng đã áp dụng
+	Nhóm đã áp dụng kỹ thuật gì, ở đâu, lợi ích đem lại là gì
+o	Liệt kê công nghệ sử dụng, thuật toán hay (nếu có)
+o	Hướng dẫn sử dụng ngắn gọn + 1 số ảnh quan trọng demo chương trình
+•	Thuyết trình:
+o	Gợi ý nội dung trình bày tối thiểu
+	Demo chương trình – mở video
+	Thiết kế
+•	Giới thiệu thiết kế (các package, các lớp, …)
+•	Giải thích các kỹ thuật OOP đã áp dụng như thế nào, lợi ích đem lại là gì? 
+
+
+Đề tài lập trình hướng đối tượng
+Đề tài 1: Ứng dụng dữ liệu mạng xã hội để nâng cao hiệu quả trong logistics nhân đạo
+
+Trong những năm gần đây, thế giới đã chứng kiến sự gia tăng đáng kể về cả mức độ nghiêm trọng và tần suất của các thảm họa thiên nhiên, từ lũ lụt, bão, hạn hán đến đại dịch, tạo ra những thách thức lớn đối với phát triển kinh tế - xã hội. Trước những cuộc khủng hoảng như vậy, logistics nhân đạo nổi lên như một thành phần quan trọng của quản lý thảm họa, nâng cao hiệu quả của các hoạt động cứu trợ và giảm thiểu tác động bất lợi của thảm họa. Các nghiên cứu gần đây đã ngày càng cho thấy vai trò của việc ứng dụng dữ liệu mạng xã hội và phân tích tâm lý trong lĩnh vực logistics nhân đạo
+
+Thu thập dữ liệu: Twitter (X), Facebook, TikTok, Youtube và các nguồn khác. Cần chọn:
+•	Một thảm họa nào đó (bão Yagi, bão Bualoi, bão Matmo, ...)
+•	Từ khóa và hashtag phù hợp để thu thập dữ liệu.
+•	Chọn khung thời gian phù hợp
+
+Tùy chọn nhiều bộ tiền xử lý dữ liệu rồi giải quyết ít nhất 2-3/4 các bài toán sau, tùy độ khó dễ của các bài toán (khuyến khích đề xuất các bài toán mới có ý nghĩa)
+
+
+Bài toán 1: Theo dõi sự thay đổi tâm lý công chúng theo thời gian bằng cách phân tích số lượng post/comment tích cực/tiêu cực theo thời gian.
+
+Phân tích này giúp xác định cách tâm lý công chúng (tích cực hoặc tiêu cực) thay đổi trong suốt và sau thảm họa (Ví dụ với bão Yagi từ ngày 6 đến 10 tháng 9 năm 2024). Ví dụ, nghiên cứu chỉ ra rằng trong giai đoạn đầu (6-9 tháng 9), các tâm lý tiêu cực chiếm ưu thế, với đỉnh điểm vào ngày 8 tháng 9, phản ánh sự lo lắng và thất vọng của công chúng về tác động nghiêm trọng của cơn bão, như gián đoạn giao thông, thiệt hại cơ sở hạ tầng, và ảnh hưởng đến đời sống hàng ngày. Từ giữa tháng 9 trở đi, các tâm lý tích cực bắt đầu tăng, vượt qua tâm lý tiêu cực vào một số ngày, cho thấy sự chuyển đổi cảm xúc từ đau khổ sang hy vọng và đoàn kết.
+
+
+Bài toán 2: Xác định mức độ và loại thiệt hại phổ biến nhất. Phân tích này phân loại các bài đăng mạng xã hội thành năm danh mục thiệt hại chính: 
+•	Người bị ảnh hưởng
+•	Gián đoạn các hoạt động kinh tế sản xuất
+•	Nhà cửa hoặc tòa nhà bị hư hỏng
+•	Tài sản cá nhân bị mất
+•	Cơ sở hạ tầng bị hư hỏng
+•	Khác (SV tự đề xuất)
+
+Ví dụ: Kết quả cho thấy nhà cửa/tòa nhà bị hư hỏng có số lượng báo cáo cao nhất, tiếp theo là người bị ảnh hưởng và cơ sở hạ tầng bị hư hỏng. Điều này giúp xác định các loại thiệt hại được công chúng quan tâm và đề cập nhiều nhất, phản ánh mức độ nghiêm trọng của chúng trong khu vực bị ảnh hưởng bởi bão Yagi.
+
+Phân tích tần suất các bài đăng liên quan đến từng loại thiệt hại sẽ cung cấp một cái nhìn tổng quan về mức độ ảnh hưởng của thảm họa ở các khía cạnh khác nhau. Ví dụ, số lượng lớn các bài đăng về nhà cửa bị hư hỏng cho thấy đây là một vấn đề nghiêm trọng, đòi hỏi sự chú ý đặc biệt trong các nỗ lực phục hồi.
+
+
+Bài toán 3: Xác định mức độ hài lòng và không hài lòng của công chúng. Phân tích này giúp đánh giá tâm lý tích cực và tiêu cực liên quan đến các loại hàng cứu trợ thiết yếu như nhà ở, giao thông, thực phẩm, hỗ trợ y tế, và tiền mặt. Ví dụ, nghiên cứu chỉ ra rằng nhà ở và giao thông nhận được nhiều tâm lý tiêu cực nhất, cho thấy các nhu cầu chưa được đáp ứng đáng kể trong những lĩnh vực này, trong khi tiền mặt, thực phẩm, và hỗ trợ y tế có tỷ lệ tâm lý tích cực cao hơn, phản ánh sự hài lòng hoặc hiệu quả phân phối tốt hơn.
+
+Ý nghĩa: Hỗ trợ ưu tiên phân bổ nguồn lực. Bằng cách xác định các lĩnh vực cứu trợ nào được công chúng đánh giá tích cực hoặc tiêu cực, các cơ quan nhân đạo và chính phủ có thể ưu tiên phân bổ nguồn lực vào những lĩnh vực có nhu cầu cấp bách nhất (như nhà ở và giao thông). Điều này giúp cải thiện hiệu quả của các nỗ lực cứu trợ và đảm bảo rằng các nguồn lực được sử dụng một cách tối ưu.
+
+
+Bài toán 4: Theo dõi tâm lý theo từng loại hàng cứu trợ: Phân tích này cho phép quan sát cách tâm lý công chúng thay đổi theo thời gian đối với từng danh mục cứu trợ cụ thể (tiền mặt, y tế, nhà ở, thực phẩm, giao thông). Ví dụ: 
+•	Tiền mặt và thực phẩm cho thấy sự gia tăng mạnh mẽ trong các bài đăng tích cực với mức độ tiêu cực hạn chế, ngụ ý rằng các hoạt động phân phối viện trợ tài chính và thực phẩm được đánh giá cao và tương đối hiệu quả.
+•	Giao thông và nhà ở lại có sự tích lũy đáng kể của tâm lý tiêu cực, phản ánh những thách thức liên quan đến thiệt hại cơ sở hạ tầng kéo dài, hạn chế di chuyển, và bất an về chỗ ở.
+•	Y tế thể hiện sự gia tăng nhất quán trong tâm lý tích cực với mức độ tiêu cực tối thiểu, cho thấy các dịch vụ y tế dễ tiếp cận và được phối hợp tốt trong quá trình phục hồi.
+
+Xác định hiệu quả của các nỗ lực cứu trợ theo từng lĩnh vực: Bằng cách phân tích tâm lý theo thời gian cho từng loại hàng cứu trợ, nghiên cứu cung cấp cái nhìn chi tiết về hiệu quả của các hoạt động logistics nhân đạo trong từng lĩnh vực. Ví dụ, tâm lý tích cực liên quan đến y tế và thực phẩm cho thấy các nỗ lực trong những lĩnh vực này thành công, trong khi tâm lý tiêu cực về nhà ở và giao thông chỉ ra các khoảng trống cần được giải quyết.
+
+Yêu cầu:
+Viết ứng dụng Java desktop. Viết bộ thu thập dữ liệu, bộ tiền xử lý dữ liệu và các bộ phân tích dữ liệu cho các bài toán nói trên
+
+Cần có sự tối ưu và linh động trong thiết kế. VD: dễ dàng thêm nguồn dữ liệu mới, dễ dàng thay đổi từ khóa, các loại thiệt hại, các loại mặt hàng cứu trợ. Dễ dàng cập nhật các yêu cầu cho các bài toán nói trên. Dễ dàng thay đổi mô hình đánh giá tiêu cực, tích cực. Dễ dàng cập nhật thêm, bỏ các bài toán.
+
+Duy nhất phần mô hình phân tích được phép code bằng Python (khuyến khích làm bằng Java). Nếu mô hình phân tích code bằng Python, cần cung cấp thành API để phần mã nguồn Java gọi. Mô hình hóa thật rõ ràng và tối ưu đầu vào/đầu ra dữ liệu cho các API này. Sau này có thể đổi sang các API khác. Thậm chí dễ dàng thay đổi phần mô hình viết bằng Python bằng mô hình viết bằng Java.
+
+Phân tích rõ giải pháp đã giải quyết được các yêu cầu nói trên như thế nào.
+Đề tài 2: Hệ thống Mô phỏng Giao thông Đô thị (Smart City Traffic Simulation)
+Xây dựng một ứng dụng mô phỏng luồng giao thông tại (1) một ngã ba, (2) một ngã tư, và (3) một ngã năm, (4) mở rộng trên một vùng rộng gồm mạng lưới đường đi với nhiều loại ngã rẽ. Tại một ngã rẽ thì phương tiện, các hình ảnh sẽ to lên. Tại vùng giao thông rộng hơn thì các hình ảnh nhỏ đi cho phù hợp. Cần xây dựng ít nhất 5 loại phương tiện, trong đó bắt buộc có xe cá nhân như ô tô/xe máy/xe đạp và xe ưu tiên như xe cứu thương/cứu hỏa).
+•	Số lượng phương tiện: Có thể tùy chỉnh lưu lượng (ít hoặc đông đúc).
+•	Điều khiển: Có thể chọn chế độ tự động (đèn giao thông tự chuyển) hoặc thủ công (người dùng click vào đèn để chuyển màu).
+•	Tương tác: Xe phải biết dừng khi đèn đỏ, biết giữ khoảng cách với xe trước, và xe ưu tiên phải được các xe khác "nhường đường" (giảm tốc hoặc dạt sang). Các xe có thẻ vượt nhau, nhưng vượt sao cho không gây ra va chạm
+•	Âm thanh: Nên có các âm thanh đi kèm các loại xe, âm thanh của xe xi-nhan, còi xe xin vượt, ...
+•	Đèn giao thông: có nhiều loại, loại đếm số giây, loại không đếm số giây, loại chỉ đếm số giây khi còn 10 giây 
+2. Yêu cầu về kỹ thuật
+•	Tính tái sử dụng (Extensibility): Phải dễ dàng thêm loại xe mới (ví dụ: xe buýt, xe đạp), bạn chỉ cần kế thừa mà không được sửa code của bộ điều khiển giao thông (TrafficController). Dễ dàng thêm loại ngã rẽ, thay đổi vùng giao thông các cung đường
+•	Hai chế độ hiển thị (GUI):
+o	Basic: Các phương tiện chỉ là những khối hình chữ nhật đơn giản (Square/Rect) có ghi tên (vd: "Car", "Ambu").
+o	Đồ họa: Sử dụng hình ảnh (Image/Sprite) các loại xe xoay theo hướng di chuyển, có hiệu ứng đèn nháy cho xe cứu thương.
+o	Yêu cầu: Tách biệt hoàn toàn Logic xử lý tọa độ và Logic vẽ hình.
+•	Thuật toán di chuyển: Mỗi loại xe có một "phong cách" lái khác nhau. Ví dụ: NormalDriver (tuân thủ đèn), AggressiveDriver (phóng nhanh), hoặc EmergencyDriver (vượt đèn đỏ).
+o	Thiết kế sao cho dễ dàng thay đổi "bộ não" lái xe của từng phương tiện.
+
+Đề tài 3: Hệ thống Mô phỏng Hệ sinh thái Hoang dã (Wild-Life Eco Simulation)
+1. Mô tả thế giới
+Xây dựng một môi trường gồm (1) Đồng cỏ, (2) Khu rừng rậm, (3) Hồ nước và (4) Một bản đồ tổng hợp kết hợp cả ba vùng trên.
+•	Kích thước: Khi ở vùng hồ nước nhỏ, các con vật (cá, vịt) hiện to. Khi xem toàn bản đồ rừng, các thực thể thu nhỏ lại để thấy được sự di chuyển tổng thể.
+•	Đối tượng (Ít nhất 5 loại thực thể):
+o	Thực vật: Cỏ, Cây ăn quả (tự sinh sôi theo thời gian).
+o	Động vật ăn cỏ: Thỏ, Hươu (hiền lành, chạy trốn khi gặp nguy hiểm).
+o	Động vật ăn thịt: Sói, Hổ (săn đuổi động vật ăn cỏ).
+o	Động vật đặc biệt (Ưu tiên): Con người (Thợ săn) hoặc Động vật đầu bảng (Voi) - các thực thể có quyền ưu tiên di chuyển hoặc không sợ kẻ thù.
+•	Số lượng: Tùy chỉnh lưu lượng (mùa sinh sản thì đông, mùa hạn hán thì ít).
+•	Điều khiển:
+o	Tự động: Các loài tự tìm thức ăn, nước uống dựa trên bản năng.
+o	Thủ công: Người dùng click vào một vùng để "gieo mầm" thức ăn hoặc đặt vật cản (vách đá).
+•	Tương tác:
+o	Con vật biết Dừng khi gặp vật cản hoặc Uống nước khi khát.
+o	Cơ chế "Nhường đường": Động vật nhỏ phải dạt sang một bên khi động vật lớn hoặc thú săn mồi đi qua.
+o	Săn đuổi & Vượt mặt: Sói có thể tăng tốc để đuổi kịp thỏ, thỏ có thể lách qua bụi rậm (nơi sói không vào được) để trốn thoát.
+•	Âm thanh: Tiếng chim hót, tiếng gầm của hổ khi phát hiện con mồi, tiếng bước chân sột soạt trên lá khô, ...
+
+2. Yêu cầu kỹ thuật (OOP Standard)
+•	Tính tái sử dụng (Extensibility):
+o	Phải dễ dàng thêm loài mới (ví dụ: Chim ưng, Cá sấu) bằng cách kế thừa lớp cũ
+o	Dễ dàng thay đổi môi trường (Địa hình: Đất, Nước, Bùn) ảnh hưởng đến tốc độ di chuyển của từng loài.
+•	Hai chế độ hiển thị (GUI):
+o	Basic: Các con vật là các hình tròn/vuông màu sắc khác nhau (VD: Đỏ là Cáo, Xanh lá là Thỏ).
+o	Đồ họa: Sử dụng ảnh động (Gif/Sprite) thể hiện hành động chạy, ăn, hoặc nằm ngủ.
+o	Yêu cầu: Tách biệt BioLogic (tính toán sinh tồn, đói bụng, khát) và ViewLogic (vẽ lên màn hình).
+•	Thuật toán di chuyển: Mỗi loài có một "Chiến lược sinh tồn" (Survival Strategy):
+o	PassiveStrategy: Chỉ đi lang thang và ăn cỏ.
+o	HunterStrategy: Luôn quét tìm mục tiêu trong bán kính X mét và tấn công.
+o	ScaredStrategy: Luôn di chuyển ngược hướng với kẻ thù gần nhất.
+o	Dễ dàng thay đổi "bộ não" này (ví dụ: Con thỏ khi đói quá có thể trở nên liều lĩnh - AggressiveStrategy).
+
+Cách thức nộp bài tập lớn
+
+Các yêu cầu:
+•	Tất cả cần nộp cùng 1 thời điểm: upload lên thư mục GG Drive + bản cứng báo cáo. Khi bảo vệ, các nhóm download xuống
+•	Sản phẩm cần nộp (lưu ý, nộp các file riêng lẻ, không nộp file zip
+o	Báo cáo
+o	Slide trình bày
+o	Video demo
+o	Mã nguồn chương trình
+o	Các file tài nguyên (Cần chạy chương trình ở nhà trước, để lấy được đủ dữ liệu)
+o	Nộp báo cáo bản cứng 
+•	Báo cáo:
+o	Phân công công việc các thành viên trong nhóm
+o	% đóng góp (con số lượng hóa cụ thể) của từng thành viên
+o	Chi tiết nhật ký làm việc nhóm
+o	Cần có bảng thống kê về dữ liệu thu thập được
+o	Vẽ biểu đồ UML
+	Biểu đồ phụ thuộc gói
+	Biểu đồ lớp
+o	Giải thích thiết kế
+	Các gói (package) 
+	Các lớp
+o	Giải thích các kỹ thuật lập trình hướng đối tượng đã áp dụng
+	Nhóm đã áp dụng kỹ thuật gì, ở đâu, lợi ích đem lại là gì
+o	Liệt kê công nghệ sử dụng, thuật toán hay (nếu có)
+o	Hướng dẫn sử dụng ngắn gọn + 1 số ảnh quan trọng demo chương trình
+•	Thuyết trình:
+o	Gợi ý nội dung trình bày tối thiểu
+	Demo chương trình – mở video
+	Thiết kế
+•	Giới thiệu thiết kế (các package, các lớp, …)
+•	Giải thích các kỹ thuật OOP đã áp dụng như thế nào, lợi ích đem lại là gì? 
+
+
+
