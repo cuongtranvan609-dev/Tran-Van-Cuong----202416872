@@ -1,0 +1,15 @@
+Câu hỏi :     Java là ngôn ngữ truyền tham trị (pass by value) hay truyền tham chiếu (pass by reference)? Giải thích rõ.
+
+Câu trả lời:
+	Java là ngôn ngữ luôn luôn truyền tham trị (pass by value).
+
+	Điều này có nghĩa là khi gọi hàm, Java sẽ truyền vào bản sao của giá trị biến. Tuy nhiên, cách hoạt động sẽ khác nhau tùy theo kiểu dữ liệu:
+
+	Đối với kiểu nguyên thủy (int, double, …):  Một bản sao của giá trị được truyền vào hàm → thay đổi trong hàm không ảnh hưởng đến biến gốc.
+	Đối với đối tượng (object):  Java truyền bản sao của tham chiếu (địa chỉ) đến đối tượng.
+Vì vậy:
+	Có thể thay đổi nội dung bên trong object.
+	Nhưng không thể làm thay đổi biến gốc trỏ sang object khác.
+
+Kết luận:
+	Java luôn là pass by value. Sự nhầm lẫn xảy ra vì với object, giá trị được truyền là tham chiếu, chứ không phải chính object.
