@@ -1,87 +1,112 @@
 package hust.soict.hedspi.aims.cart;
 
-import hust.soict.hedspi.aims.disc.DigitalVideoDisc;
+import hust.soict.hedspi.aims.media.DigitalVideoDisc;
+import hust.soict.hedspi.aims.media.Media;
+import hust.soict.hedspi.aims.exception.LimitExceededException;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
+import java.util.Collections;
 
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
 
-    private DigitalVideoDisc[] itemsOrdered = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
-    private int qtyOrdered = 0;
+    private ObservableList<Media> itemsOrdered = FXCollections.observableArrayList();
 
     // ================= ADD =================
-    public void addDigitalVideoDisc(DigitalVideoDisc disc) {
-        if (qtyOrdered < MAX_NUMBERS_ORDERED) {
-            itemsOrdered[qtyOrdered] = disc;
-            qtyOrdered++;
-            System.out.println("The disc has been added");
+    public void addMedia(Media media) throws LimitExceededException {
+        if (itemsOrdered.size() >= MAX_NUMBERS_ORDERED) {
+            throw new LimitExceededException("ERROR: The number of media in the cart has reached the limit (" + MAX_NUMBERS_ORDERED + ")!");
+        }
+        if (itemsOrdered.contains(media)) {
+            System.out.println("The media is already in the cart");
         } else {
-            System.out.println("The cart is full");
+            itemsOrdered.add(media);
+            System.out.println("The media has been added");
         }
     }
 
     // ================= REMOVE =================
-    public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
-        boolean found = false;
-
-        for (int i = 0; i < qtyOrdered; i++) {
-            if (itemsOrdered[i] == disc) {
-                found = true;
-
-                for (int j = i + 1; j < qtyOrdered; j++) {
-                    itemsOrdered[j - 1] = itemsOrdered[j];
-                }
-
-                itemsOrdered[qtyOrdered - 1] = null; // clear phần tử cuối
-                qtyOrdered--;
-
-                System.out.println("The disc has been removed");
-                break;
-            }
-        }
-
-        if (!found) {
-            System.out.println("The disc was not found");
+    public void removeMedia(Media media) {
+        if (itemsOrdered.contains(media)) {
+            itemsOrdered.remove(media);
+            System.out.println("The media has been removed");
+        } else {
+            System.out.println("The media was not found");
         }
     }
 
     // ================= TOTAL COST =================
     public double totalCost() {
         double sum = 0;
-
-        for (int i = 0; i < qtyOrdered; i++) {
-            sum += itemsOrdered[i].getCost();
+        for (Media m : itemsOrdered) {
+            sum += m.getCost();
         }
-
         return sum;
     }
 
-    // ================= YÊU CẦU 6 =================
+    // ================= SEARCH =================
+    public Media searchById(int id) {
+        for (Media m : itemsOrdered) {
+            if (m.getId() == id) {
+                System.out.println("Found: " + m.toString());
+                return m;
+            }
+        }
+        System.out.println("No matching media found");
+        return null;
+    }
 
-    // In danh sách DVD trong cart
+    public Media searchByTitle(String title) {
+        for (Media m : itemsOrdered) {
+            if (m.getTitle().equalsIgnoreCase(title)) {
+                System.out.println("Found: " + m.toString());
+                return m;
+            }
+        }
+        System.out.println("No matching media found");
+        return null;
+    }
+
+    // ================= SORT =================
+    public void sortByTitleCost() {
+        Collections.sort(itemsOrdered, Media.COMPARE_BY_TITLE_COST);
+        System.out.println("Cart sorted by title then cost");
+    }
+
+    public void sortByCostTitle() {
+        Collections.sort(itemsOrdered, Media.COMPARE_BY_COST_TITLE);
+        System.out.println("Cart sorted by cost then title");
+    }
+
+    // ================= PRINT =================
     public void print() {
         System.out.println("***************CART***************");
-
-        for (int i = 0; i < qtyOrdered; i++) {
-            System.out.println((i + 1) + ". " + itemsOrdered[i].toString());
+        for (int i = 0; i < itemsOrdered.size(); i++) {
+            System.out.println((i + 1) + ". " + itemsOrdered.get(i).toString());
         }
-
         System.out.println("Total cost: " + totalCost());
         System.out.println("**********************************");
     }
 
-    // Tìm kiếm theo title
+    // ================= MISC =================
+    public void clear() {
+        itemsOrdered.clear();
+    }
+
+    public ObservableList<Media> getItemsOrdered() {
+        return itemsOrdered;
+    }
+
+    public void addDigitalVideoDisc(DigitalVideoDisc dvd1) {
+        try {
+            addMedia(dvd1);
+        } catch (LimitExceededException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
     public void search(String title) {
-        boolean found = false;
-
-        for (int i = 0; i < qtyOrdered; i++) {
-            if (itemsOrdered[i].getTitle().equalsIgnoreCase(title)) {
-                System.out.println("Found: " + itemsOrdered[i].toString());
-                found = true;
-            }
-        }
-
-        if (!found) {
-            System.out.println("No matching DVD found");
-        }
+        searchByTitle(title);
     }
 }
